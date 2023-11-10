@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecode's Blogs | <%= title %></title>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="/">Ecode's Blog</a>
+            <p>A NodeJS Course on building a blog</p>
+        </div>
+        <ul>
+            <li><a href="/">Blogs</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/blogs/create">New Blog</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>All Blogs</h1>
+
+        <%  if(blogs.length > 0) { %>
+            <%  blogs.forEach(blog => {   %>
+                <h3><%=  blog.title  %></h3>
+                <p><%=  blog.snippet  %></p>
+            <% }) %>
+        <% } else { %>
+            <p>You've not added any blogs :(</p>
+        <% } %>
+    </div>
+
+    
+</body>
+</html>
