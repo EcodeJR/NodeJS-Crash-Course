@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+    
+    }
+    .main_page{
+        position: relative;
+        height: fit-content;
+        width: 100%;
+        
+    }
+    .aboutus,
+    .create,
+    .unknown{
+        position: relative;
+        color: black;
+        padding: 10px;
+    }
+    .hero,
+    .aboutus,
+    .create,
+    .unknown{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        
+    }
+    .hero{
+        background-image: url(../images/bg1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .aboutus,
+    .create,
+    .unknown,
+    .content{
+        background: #F2994A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .hero h1{
+        font-size: 6rem;
+    }
+    .hero h3{
+        font-size: 2rem;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .blogname{
+        padding: 5px;
+    }
+    .blogname a{
+        text-decoration: none;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .blogname p{
+        color: white;
+        font-size: .6rem;
+    }
+    nav ul{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        padding: 5px;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 0 10px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 30%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        transition: all .3s ease-in-out;
+    }
+    nav ul li:hover a::after{
+        width: 100%;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content h1{
+        font-size: 2rem;
+        font-weight: 700;
+        color: white;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, .5);
+        text-align: center;
+    }
+    .blogs_list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        grid-gap: 10px;
+    }
+    .blog_item{
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.28);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.3px);
+        -webkit-backdrop-filter: blur(7.3px);
+        border: 1px solid rgba(255, 255, 255, 0.32);
+        color: white;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 30vw;
+        height: 30vh;
+    }
+    /* Form style */
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.28);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.3px);
+        -webkit-backdrop-filter: blur(7.3px);
+        border: 1px solid rgba(255, 255, 255, 0.32);
+        color: white;
+        width: 40vw;
+        height: 50vh;
+        padding: 20px;
+    }
+    form input,
+    form textarea{
+        width: 90%;
+        height: 40px;
+        outline: none;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid white;
+        font-size: 1rem;
+        padding: 1px 3px;
+        color: white;
+    }
+    form button{
+        margin: 10px auto;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        background-color: rgba(255, 255, 255, .5);
+        cursor: pointer;
+    }
+    footer{
+        width: 100%;
+        padding: 10px;
+    }
+    footer p{
+        text-align: center;
+    }

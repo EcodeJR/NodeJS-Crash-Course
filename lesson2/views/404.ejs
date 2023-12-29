@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecode's Blogs | <%= title %></title>
-</head>
+    <%- include('./partials/head.ejs')  %>
 <body>
-    <nav>
-        <div>
-            <a href="/">Ecode's Blog</a>
-            <p>A NodeJS Course on building a blog</p>
+    <section class="unknown">
+        <%- include('./partials/nav.ejs')  %>
+        <div class="content">
+            <h1>OOPS, Page not found :)</h1>
+            
         </div>
-        <ul>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blogs/create">New Blog</a></li>
-        </ul>
-    </nav>
-    <div>
-        <h1>OOPS, Page not found :)</h1>
-        
-    </div>
-
+        <%- include('./partials/footer.ejs')  %>
+    </section>
     
 </body>
 </html>
