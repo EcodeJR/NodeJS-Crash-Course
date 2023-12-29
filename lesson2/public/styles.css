@@ -19,7 +19,8 @@
     .hero,
     .aboutus,
     .create,
-    .unknown{
+    .unknown,
+    .details{
         width: 100%;
         min-height: 100vh;
         display: flex;
@@ -117,6 +118,16 @@
         border-bottom: 1px solid rgba(255, 255, 255, .5);
         text-align: center;
     }
+    /* details page*/
+    .delete{
+        padding: 7px 14px;
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 5px
+    }
     .blogs_list{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -133,12 +144,18 @@
         border: 1px solid rgba(255, 255, 255, 0.32);
         color: white;
         margin: 20px 0;
+        
+        width: 30vw;
+        height: 30vh;
+    }
+    .blog_item a{
+        text-decoration: none;
+        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 30vw;
-        height: 30vh;
+        height: 100%;
     }
     /* Form style */
     form{
