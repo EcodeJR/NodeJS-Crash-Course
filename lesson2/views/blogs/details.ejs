@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs')  %>
+    <%- include('../partials/head.ejs')  %>
 <body>
     <section class="details content">
-        <%- include('./partials/nav.ejs')  %>
+        <%- include('../partials/nav.ejs')  %>
             
         <div class="content">
             <h2><%= blog.title %></h2>
@@ -13,7 +13,7 @@
         </div>
         <a class="delete" data-doc='<%= blog._id %>'>delete</a>
     </section>
-<%- include('./partials/footer.ejs')  %>
+<%- include('../partials/footer.ejs')  %>
     
 
 <script>
